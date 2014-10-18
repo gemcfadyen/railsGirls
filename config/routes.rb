@@ -1,4 +1,5 @@
 Railsgirls::Application.routes.draw do
+  get "pages/info"
   resources :ideas
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -55,4 +56,5 @@ Railsgirls::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  root :to => redirect('/ideas')
 end
